@@ -10,6 +10,9 @@ const DOB = "17091999";
 const EMAIL = "john@xyz.com";
 const ROLL_NUMBER = "ABCD123";
 
+app.get("/bfhl", (req, res) => {
+    res.status(200).send("This is backend");
+});
 
 app.get("/bfhl", (req, res) => {
     res.status(200).json({ operation_code: 1 });
